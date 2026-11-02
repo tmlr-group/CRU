@@ -1,0 +1,21 @@
+# path to root directory
+root_dir: ${oc.env:CRU_ROOT,.}
+
+# Set CRU_INPUT_ROOT to read checkpoints and datasets from another directory.
+input_root: ${oc.env:CRU_INPUT_ROOT,${paths.root_dir}}
+
+# path to data directory
+data_dir: ${paths.input_root}/data/
+
+# path to dataset configs
+datasets: ${paths.root_dir}/configs/data/datasets
+
+# path to output directory, created dynamically by hydra
+# path generation pattern is specified in `configs/hydra/default.yaml`
+# use it to store all files generated during the run, like ckpts and metrics
+# save_dir: ${paths.root_dir}/saves/${mode}/${task_name}
+
+output_dir: ${paths.root_dir}/saves/${mode}/${task_name}
+
+# path to working directory
+work_dir: ${hydra:runtime.cwd}

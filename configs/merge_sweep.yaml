@@ -1,0 +1,7 @@
+# Same model, tokenizer and TOFU evaluation settings as the Replace stage.
+defaults:
+  - eval
+  - _self_
+
+ranking: ???
+save_models: false

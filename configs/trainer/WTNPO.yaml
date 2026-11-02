@@ -1,0 +1,9 @@
+defaults:
+  - GradDiff
+
+handler: WTNPO
+method_args:
+  beta: 50.0
+  alpha: 50.0
+  gamma: 1.0
+  retain_loss_type: NLL

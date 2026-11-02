@@ -1,0 +1,12 @@
+TOFU_QA_forget_sub:
+  handler: QASubDataset
+  args:
+    hf_args:
+      name: "forget05_alt"
+      split: "train"
+      path: "locuslab/TOFU"
+    question_key: "question"
+    answer_key: "answer"
+    sub_answer_key: "sub_answer"
+    max_length: 512
+    

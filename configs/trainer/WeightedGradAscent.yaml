@@ -1,0 +1,6 @@
+defaults:
+  - finetune
+
+handler: WeightedGradAscent
+method_args:
+  alpha: 50.0

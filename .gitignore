@@ -1,0 +1,45 @@
+# Cluster launchers are deliberately excluded from this repository.
+/slurm/
+**/slurm/
+*.sbatch
+
+# Generated experiments and local inputs
+outputs*/
+checkpoints/
+saves*/
+/data/
+/datasets/
+/models/
+figures/
+curve_data.json
+*figure_manifest.json
+paper_style_captions.md
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.log
+*.out
+*.err
+.hydra/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.cache/
+.DS_Store
+
+# Credentials and machine-specific runtime state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.sock
+connection_status.json
+connection_watch.log
+
+# Local regression checks are not published.
+/tests/

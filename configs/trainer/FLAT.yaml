@@ -1,0 +1,11 @@
+defaults:
+  - GradDiff
+
+handler: FLAT
+method_args:
+  beta: 0.1
+  alpha: 1.0
+  # gamma: 0.00005
+  # gamma: 0.0001
+  gamma: 0.0001
+  retain_loss_type: NLL

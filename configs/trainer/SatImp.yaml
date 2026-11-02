@@ -1,0 +1,20 @@
+defaults:
+  - finetune
+
+handler: SatImp
+
+args: # HuggingFace TrainingArguments
+  learning_rate: 1e-5
+  num_train_epochs: 5
+
+method_args:
+  beta: 5.9
+  beta_param: 5.9
+  hyper_param: 5.9
+  alpha: 1.0
+  gamma: 1.0
+
+# 1B 7.8
+# 3B 6.5
+# 7B 5.9
+# Phi 6.0
